@@ -1,0 +1,81 @@
+body{
+    background-image: url("images/bg-intro-desktop.png");
+    background-repeat: none;
+    background-color: hsl(0, 100%, 74%);
+    font-family: Poppins;
+    color: white;
+    font-size: 16px;
+}
+h1{
+    font-size: 3em;
+    line-height: 95%;
+}
+.container{
+    display: flex;
+    padding: 3em 10em;
+}
+
+.container-child{
+    flex: 1;
+    flex-direction: row;
+}
+.text-section{
+    padding-top: 20%;
+}
+
+.form-section{
+    font-size: 10px;
+    background-color: white;
+    color: hsl(246, 25%, 77%);
+    border-radius: 10px;
+    padding:3em;
+    margin: 10px;
+    max-width: 70%;
+   
+}
+.form{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto auto auto auto auto ;
+    gap:2em;
+    
+}
+
+input,select,textarea{
+    border: 1px solid hsl(246, 25%, 77%);
+    background-color: white;
+    border-radius: 0.25rem;
+    height: 25px;
+
+}
+input[type=text],input[type=email],input[type=password]{
+    padding: 10px;
+}
+input[type=submit]{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+   
+
+}
+.form-section a{
+    color: hsl(0, 100%, 74%) ;
+}
+
+button{
+    padding:10px 85px;
+    margin: 10px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+   
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:600){
+    body{
+        background-image: url("images/bg-intro-mobile.png");
+    }
+  
+}
